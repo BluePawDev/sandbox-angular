@@ -1,28 +1,10 @@
-$(document).ready(function() {
+// MODULE
+var angularApp = angular.module('angularApp', []);
 
-  var currentStep = 0;
+// CONTROLLERS
+angularApp.controller('mainController', ['$scope', function ($scope) {
+    
+}]);
 
-  $("#step1").hide();
-  $("#step2").hide();
 
-  $("#btnStep1").click(function() {
 
-    $("#step1").show();
-    $("#step2").hide();
-
-    currentStep = 1;
-    // update the dB...
-
-  });
-
-  $("#btnStep2").click(function() {
-
-    $("#step1").hide();
-    $("#step2").show();
-
-    currentStep = 2;
-    // update the dB...
-    });
-
-});
-console.log($("h1").attr("reply"));
