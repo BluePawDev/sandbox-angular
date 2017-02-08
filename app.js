@@ -13,6 +13,15 @@ $(document).ready(function() {
     currentStep = 1;
     // update the dB...
 
-  })
+  });
 
-})
+  $("#btnStep2").click(function() {
+
+    $("#step1").hide();
+    $("#step2").show();
+
+    currentStep = 2;
+    // update the dB...
+    });
+
+});
